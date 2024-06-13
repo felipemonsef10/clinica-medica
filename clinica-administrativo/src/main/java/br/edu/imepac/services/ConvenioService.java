@@ -37,7 +37,7 @@ public class ConvenioService {
         Optional<ConvenioModel> optionalConvenio = convenioRepository.findById(id);
 
         if (optionalConvenio.isPresent()) {
-            ConvenioModel convenioModel =optionalConvenio.get();
+            ConvenioModel convenioModel = optionalConvenio.get();
             convenioModel.setNome_rede(convenioDetails.getNome_rede());
             convenioModel.setCnpj(convenioDetails.getCnpj());
             convenioModel.setInscricao_estadual(convenioDetails.getInscricao_estadual());

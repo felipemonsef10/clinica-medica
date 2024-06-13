@@ -4,14 +4,16 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
-@Table(name = "medicos")
+@Table(name = "funcionarios")
 @Data
-public class MedicoModel {
+public class FuncionarioModel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private String crm;
-    private String especialidade;
+    private String rg;
+    private String cpf;
+    private String endereco;
+    private String telefone;
 }
